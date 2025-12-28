@@ -5,22 +5,32 @@ $accent:#F0145A;
 $active-regular-color:#24A3FF;
 $active-hover-color:#0085FF;
 $active-color:#006CCF;
-$grey-bg:#F5F5FA;
-$grey-bg-alt:#EDEDF7;
-$grey-text:#B3B3BA;
-$grey-separator:#E6E6F0;
+$color-bg:#F5F5FA;
+$color-bg-alt:#EDEDF7;
+$color-text:#B3B3BA;
+$color-separator:#E6E6F0;
 $gradient:linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
 $gradient-soft:linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
 $gradient-red:linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
 $gradient-supersoft:linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 $gradient-red-text:linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-
-
-
-
-
-
-
+$a-regular: #24A3FF;
+$a-hover: #F0145A;
+$base-fz: 16px;
+$base-lh: 1.6;
+$base-ff: "Montserrat", sans-sarif;
+$h1-fz:38px;
+$h1-lh:1;
+$h2-fz: 30px;
+$h2-lh: 1;
+$h3-fz: 22px;
+$h3-lh: 1;
+$h4-fz: 16px;
+$h4-lh: 1;
+$ul-fz:18px;
+$ul-lh:1.4;
+$ol-fz: 18px;
+$ol-lh: 1.4;
 
 // $main-color:  #323264;
 // $second-color: #161618;
@@ -30,7 +40,3 @@ $gradient-red-text:linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 // $hero-name-background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
 // $brand-color: #646cff;
 // $brand-light-color: #747bff;
-
-$base-fz: 14px;
-$base-lh: 1.2; 
-$base-ff: "Montserrat", sans-sarif;
