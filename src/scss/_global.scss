@@ -1,9 +1,9 @@
 body {
 	font-family: 'Montserrat';
-	background: $main-color;
-	color: $main-color;
+	// background: $main-color;
+	// color: $main-color;
 	font-size: 14px;
-	transition: background .2s ease, color .2s ease;
+	// transition: background .2s ease, color .2s ease;
 	@include viewport-md {
 		font-size: 10px;
 	}
