@@ -1,0 +1,31 @@
+.lang-list{
+    display: flex;
+    gap:8px;
+    text-transform: uppercase;
+    list-style: none;
+    letter-spacing: 1;
+    font-weight: 700;
+    font-size:$fs-xs;
+    color:$color-text;
+
+    &-item:hover:not(.lang-list-item--active){
+        background: $color-bg;
+        color: $color-text;
+    }
+    &-item{
+        border-radius: 8px;
+        
+        
+        &--active{
+            background: $a-hover;
+            color: $a-active;
+            border-radius: 8px;
+        }
+    }
+
+    &__link{
+        display: inline-block;
+        color: inherit;
+        padding: 5px 7px;
+    }
+}

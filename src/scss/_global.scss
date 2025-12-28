@@ -35,10 +35,11 @@ ol{
 }
 a{
 	color: $a-regular;
+	text-decoration: none;
 
-	&:hover{
-		color: $a-hover;
-	}
+	// &:hover{
+	// 	color: $a-hover;
+	// }
 }
 
 .wrapper{
@@ -49,7 +50,7 @@ a{
 }
 
 .container {
-	max-width: 1180px;
+	max-width: 1630px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
