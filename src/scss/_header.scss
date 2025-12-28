@@ -1,3 +1,19 @@
+
+.header{
+    &__container{
+        padding: 0;
+    }
+    &-bottom{
+        @include flex-between(0);
+        padding: 10px 15px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+    }
+}
+.icon-menu-icon{
+    font-size: 25px;
+}
 .lang-list{
     display: flex;
     gap:8px;
@@ -27,5 +43,26 @@
         display: inline-block;
         color: inherit;
         padding: 5px 7px;
+    }
+}
+.header-info{
+    background: $color-bg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.menu{
+    &__list{
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+    }
+    &__burger{
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
     }
 }

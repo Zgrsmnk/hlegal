@@ -28,6 +28,8 @@ h4{
 ul{
 	font-size: $ul-fz;
 	line-height: $ul-lh;
+	margin: 0;
+	padding: 0;
 }
 ol{
 	font-size: $ol-fz;
@@ -41,7 +43,9 @@ a{
 	// 	color: $a-hover;
 	// }
 }
-
+li{
+	list-style: none;;
+}
 .wrapper{
 	min-height: 100vh;
 	min-width: 375px;
@@ -58,4 +62,11 @@ a{
 .title {
 	font-size: 25px;
 	text-align: center;
+}
+.mobile-hidden{
+	display: none;
+
+	@media screen and (min-width: 768px){
+		display: block;
+	}
 }
