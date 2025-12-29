@@ -59,7 +59,7 @@
     @media screen and (min-width: 768px) {
         background: none;
         padding: 0 0 30px 0;
-        justify-content: normal;
+        justify-content: space-between;
         width: 482px;
     }
 }
@@ -171,4 +171,16 @@
             line-height: 1;
         }
     }
+}
+.address-size{
+    width: 201px;
+    font-weight: 400;
+    font-size: $fs-m;
+    line-height: 1;
+}
+.mobile-size{
+    width: 104px;
+    font-weight: 700;
+    font-size: $fs-m;
+    line-height: 1;
 }
