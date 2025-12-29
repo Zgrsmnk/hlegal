@@ -1,5 +1,4 @@
 import '../scss/style.scss'
-switchThemeColor()
 
 (function () {
   const isOpen = document.querySelector(".menu__burger");
