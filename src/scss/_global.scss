@@ -1,6 +1,6 @@
 body {
 	font-family: 'Montserrat', sans-serif;
-	// background: $main-color;
+	background: $main-color;
 	// color: $main-color;
 	font-size:$base-fz;
 	line-height: $base-lh;
@@ -47,16 +47,17 @@ li{
 	list-style: none;;
 }
 .wrapper{
-	min-height: 100vh;
+	// min-height: 100vh;
 	min-width: 375px;
 	position: relative;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 .container {
 	max-width: 1630px;
 	margin: 0 auto;
 	padding: 0 15px;
+	// position: relative;
 }
 
 .title {
