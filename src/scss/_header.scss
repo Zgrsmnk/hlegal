@@ -8,6 +8,14 @@
     @media screen and (min-width: 768px) {
         margin: 50px 0 0 60px;
     }
+    @media screen and (min-width: 1024px) {
+        margin: 50px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 60px;
+        flex-direction: row-reverse;
+    }
 }
 .icon-menu-icon{
     font-size: 25px;
@@ -30,6 +38,7 @@
             background: $color-bg;
             color: $color-text;
         }
+
     }
     &-item{
         border-radius: 8px;
@@ -102,6 +111,12 @@
         gap:30px;
         width: 420px;
     }
+    @media screen and (min-width: 1024px) {
+        .header__logo{
+            position: absolute;
+            // top:10px;
+        }
+    }
 }
 .menu{
     width: 359px;
@@ -145,6 +160,11 @@
             flex-direction: row;
             justify-content: flex-start;
             gap:15px;
+        }
+        @media screen and (min-width: 1024px) {
+            position: absolute;
+            top: 46px;
+            right: 67px;
         }
     }
     &__burger{
@@ -195,6 +215,9 @@
             width: auto;
             font-size: $fs-m;
             line-height: 1;
+            font-size: $fs-m;
+            line-height: 1;
+            font-weight: 700;
             
             &:hover:not(.menu__link--active){
                 color: $a-regular;
