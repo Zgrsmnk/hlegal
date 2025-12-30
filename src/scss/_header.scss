@@ -79,6 +79,10 @@
         font-size: $fs-m;
         line-height: 1;
         color: $color-text;
+
+        .mobile-number{
+            color: $color-text;
+        }
     }
     
     .icon-size {
@@ -164,7 +168,7 @@
         @media screen and (min-width: 1024px) {
             position: absolute;
             top: 46px;
-            right: 67px;
+            right: 62px;
         }
     }
     &__burger{
@@ -202,6 +206,9 @@
         width: 335px;
         border-radius: 12px;
         position: relative;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1;
 
         &:hover{
             color: $a-hover;
@@ -248,20 +255,3 @@
         }
     }
 }
-// .address-size{
-//     width: 201px;
-//     font-weight: 400;
-//     font-size: $fs-m;
-//     line-height: 1;
-//     color: $color-text;
-// }
-// .mobile-size{
-//     width: 104px;
-//     font-weight: 700;
-//     font-size: $fs-m;
-//     line-height: 1;
-//     color:$color-text;
-// }
-// .icon-size{
-
-// }
