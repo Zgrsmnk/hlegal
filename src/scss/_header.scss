@@ -65,6 +65,22 @@
     // justify-content: space-between;
     padding: 10px 15px;
 
+    &__item + .header-info__item{
+        position: relative;
+        
+        &::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: $a-active;
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+
     .address-size {
         width: 201px;
         font-weight: 400;
