@@ -23,7 +23,7 @@
         flex-direction: row-reverse;
     }
 }
-.icon-menu-icon{
+.icon-menu{
     font-size: 25px;
 }
 .lang-list{
@@ -34,15 +34,15 @@
     letter-spacing: 1;
     font-weight: 700;
     font-size:$fs-xs;
-    color:$color-text;
+    color:$a-active;
 
     &-item:hover:not(.lang-list-item--active){
         background: $a-hover;
         color: $a-active;
         border-radius: 8px;
         @media screen and (min-width: 768px) {
-            background: $color-bg;
-            color: $color-text;
+            background: $color-header;
+            color: $a-active;
         }
 
     }
@@ -64,7 +64,7 @@
     }
 }
 .header-info{
-    background: $color-bg;
+    background: $color-header;
     @include flex-between(0);
     // display: flex;
     // align-items: center;
@@ -85,7 +85,7 @@
         // width: 482px;
         gap:16px;
 
-        &__item+.header-info__item {
+        &__item +.header-info__item {
             position: relative;
         
             &::before {
@@ -117,16 +117,15 @@
         font-weight: 700;
         font-size: $fs-m;
         line-height: 1;
-        color: $color-text;
 
         .mobile-number{
-            color: $color-text;
+            color: $a-active;
         }
     }
     
     .icon-size {
         font-size: 24px;
-        color: $color-text;
+        color: $a-active;
 
         &:hover{
             color: $a-hover;
@@ -258,9 +257,10 @@
             font-size: $fs-m;
             line-height: 1;
             font-weight: 700;
+            color: $a-active;
             
             &:hover:not(.menu__link--active){
-                color: $a-regular;
+                color: $a-active;
             }
             &:hover:not(.menu__link--active)::after{
                 content: '';
@@ -269,7 +269,7 @@
                 height: 2px;
                 left: 0;
                 top: 20px;
-                background-color: $a-regular;
+                background-color: $a-active;
             }
 
             &--active{
