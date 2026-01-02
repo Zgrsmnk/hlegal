@@ -1,0 +1,33 @@
+.title-block{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 30px 30px;
+
+    &__second{
+        margin: 0;
+    }
+
+    &__services{
+        &--item{
+            @include flex-center-second;
+        }
+    }
+}
+
+.cards{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(261px, 1fr));
+    padding: 0 30px 60px 30px;
+    gap:30px;
+
+    .card__item{
+
+        &--img {
+            width: 92px;
+            height: 92px;
+            background: $a-active;
+        }
+    }
+}

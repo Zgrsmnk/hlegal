@@ -20,4 +20,8 @@
   display: flex;
   justify-content: center;
 }
-// @mixin flex-center{}
+@mixin flex-center-second{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

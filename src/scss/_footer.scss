@@ -71,8 +71,7 @@
         flex-direction: column;
     }
     &__number{
-        @include flex-center;
-        align-items: center;
+        @include flex-center-second;
         padding-bottom: 10px;
 
         .footer__phone{
