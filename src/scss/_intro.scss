@@ -8,4 +8,30 @@
     background-position: 50% 50%;
     background-size: auto 100%;
     text-align: center;
+    position: relative;
+
+    &__anchor{
+        @include flex-center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 2px solid $color-header;
+        position: absolute;
+        bottom: 10px;
+        left:50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+
+        .icon-chevron-thin-down{
+            color: $a-active;
+        }
+
+        &:hover {
+            border: 2px solid $a-hover-active;
+
+            .icon-chevron-thin-down {
+                color: $a-hover;
+            }
+        }
+    }
 }
