@@ -6,12 +6,6 @@
     background: url(../img/intro-logo.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: contain;
+    background-size: auto 100%;
     text-align: center;
-
-    &__heading{
-        font-size: 38px;
-        line-height: 1;
-        font-weight: 700;
-    }
 }
