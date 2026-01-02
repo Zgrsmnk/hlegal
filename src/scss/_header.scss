@@ -1,19 +1,25 @@
 
 .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    
     &__container{
         padding: 0;
     }
 }
 .header__container{
     @media screen and (min-width: 768px) {
-        margin: 50px 0 0 60px;
+        padding: 50px 0 0 60px;
     }
     @media screen and (min-width: 1024px) {
-        margin: 50px 0 0 0;
+        padding: 50px 60px 0 60px;
         display: flex;
         justify-content: space-between;
         position: relative;
-        padding: 0 60px;
+        // padding: 0 60px;
         flex-direction: row-reverse;
     }
 }
@@ -65,20 +71,38 @@
     // justify-content: space-between;
     padding: 10px 15px;
 
-    &__item + .header-info__item{
-        position: relative;
+    // @media screen and (min-width: 768px) {
+    //     background: none;
+    //     padding: 0 0 30px 0;
+    //     justify-content: space-between;
+    //     width: 482px;
+    // }
+
+    @media screen and (min-width: 768px) {
+        background: none;
+        padding: 0 0 30px 0;
+        justify-content: space-between;
+        width: 482px;
+
+        &__item+.header-info__item {
+            position: relative;
         
-        &::before {
-            content: '';
-            width: 6px;
-            height: 6px;
-            background: $a-active;
-            border-radius: 50%;
-            position: absolute;
-            left: -10px;
-            top:50%;
-            transform: translateY(-50%);
+            &::before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                background: $a-active;
+                border-radius: 50%;
+                position: absolute;
+                left: -10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding: 0;
     }
 
     .address-size {
@@ -108,13 +132,6 @@
         &:hover{
             color: $a-hover;
         }
-    }
-
-    @media screen and (min-width: 768px) {
-        background: none;
-        padding: 0 0 30px 0;
-        justify-content: space-between;
-        width: 482px;
     }
 }
 .header-bottom{
@@ -183,7 +200,7 @@
         }
         @media screen and (min-width: 1024px) {
             position: absolute;
-            top: 46px;
+            top: 95px;
             right: 62px;
         }
     }

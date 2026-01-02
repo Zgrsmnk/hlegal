@@ -1,0 +1,17 @@
+.intro{
+    min-height: 100vh;
+    padding: 150px 15px;
+    @include flex-center;
+    align-items: center;
+    background: url(../img/intro-logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    text-align: center;
+
+    &__heading{
+        font-size: 38px;
+        line-height: 1;
+        font-weight: 700;
+    }
+}
