@@ -4,14 +4,40 @@
     flex-direction: column;
     row-gap: 10px;
     padding: 30px 30px;
+    
+    @media screen and (min-width: 768px) {
+        padding: 60px 60px;
+        width: 650px;
+    }
+    @media screen and (min-width: 1024px){
+        width: auto;
+    }
 
     &__second{
         margin: 0;
+        background: $gradient-red-text;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media screen and (min-width: 768px) {
+            font-size: 38px;
+        }
     }
 
     &__services{
         &--item{
             @include flex-center-second;
+            font-size: $fs-s;
+            line-height: 1;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+
+            .icon-cheveron-right{
+                font-size: $fs-xl;
+            }
+
         }
     }
 }
@@ -39,6 +65,18 @@
             background: $a-active;
             @include flex-center-second;
             border-radius: 24px;
+        }
+
+        &--title{
+            color: $a-regular;
+            width: 300px;
+            line-height: 1;
+            margin: 0;
+            padding: 30px 0 15px 0;
+
+            @media screen and (min-width: 1024px) {
+                width: 260px;
+            }
         }
     }
 }
