@@ -1,5 +1,4 @@
 .footer{
-    margin-top: 40px;
     background: $color-bg;
 
     &__text{
@@ -46,10 +45,31 @@
         font-size: $fs-m;
         line-height: 1;
         color: $main-color;
+        position: relative;
 
         @media screen and (min-width: 768px) {
             padding: 0;
         }
+
+        @media screen and (min-width: 768px) {
+            &--item{
+                position: relative;
+            }
+
+            &::after{
+                content: '';
+                width: 6px;
+                height: 6px;
+                background: $color-text;
+                border-radius: 50%;
+                position: absolute;
+                right: -17px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+
     }
     &__map{
         @include flex-center;
@@ -74,6 +94,24 @@
         @include flex-center-second;
         padding-bottom: 10px;
 
+        @media screen and (min-width: 768px) {
+            &--icon {
+                position: relative;
+
+                &::before{
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background: $color-text;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: -17px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
         .footer__phone{
             color: $static-color;
             font-size: $fs-m;
@@ -94,6 +132,27 @@
 
         &:hover{
             color: $a-hover;
+        }
+
+            @media screen and (min-width: 768px) {
+                padding: 0;
+            }
+            @media screen and (min-width: 768px) {
+                &--icon{
+                    position: relative;
+
+                &::after {
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background: $color-text;
+                    border-radius: 50%;
+                    position: absolute;
+                    right: -17px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
         }
     }
     &__email{
