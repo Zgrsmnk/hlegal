@@ -13,18 +13,14 @@
     &__anchor{
         @include flex-center;
         align-items: center;
-        width: 30px;
-        height: 30px;
+        width: 42px;
+        height: 42px;
         border: 2px solid $color-header;
         position: absolute;
-        bottom: 20px;
+        bottom: 30px;
         left:50%;
         transform: translateX(-50%);
         border-radius: 50%;
-
-        @media screen and (min-width: 768px) {
-            bottom: 10px;
-        }
 
         .icon-chevron-thin-down{
             color: $a-active;
