@@ -38,6 +38,10 @@
                 font-size: $fs-xl;
             }
 
+            &:hover{
+                color: $accent;
+            }
+
         }
     }
 }
