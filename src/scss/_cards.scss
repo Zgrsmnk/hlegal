@@ -7,22 +7,13 @@
     
     @media screen and (min-width: 768px) {
         padding: 60px 60px;
-        width: 650px;
     }
-    @media screen and (min-width: 1024px){
-        width: auto;
-    }
-
     &__second{
         margin: 0;
         background: $gradient-red-text;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        @media screen and (min-width: 768px) {
-            font-size: 38px;
-        }
     }
 
     &__services{
@@ -69,6 +60,7 @@
             background: $a-active;
             @include flex-center-second;
             border-radius: 24px;
+            padding: 14px;
         }
 
         &--title{

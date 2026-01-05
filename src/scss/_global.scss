@@ -16,6 +16,10 @@ h1{
 h2{
 	font-size: $h2-fz;
 	line-height: $h2-lh;
+
+	@media screen and (min-width: 768px) {
+		font-size: 38px;
+	}
 }
 h3{
 	font-size: $h3-fz;
