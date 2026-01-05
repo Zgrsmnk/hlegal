@@ -74,6 +74,34 @@ li{
 .bg-linear{
 	background: $gradient-supersoft;
 	color: $a-active;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	position: relative;
+
+	&::before{
+		content: '';
+		position: absolute;
+		bottom:0;
+		left: 20px;
+		right: 20px;
+		height: 10px;
+		background:rgba(202, 202, 219, 1);
+		border-radius: 0 0 12px 12px;
+		transform: translateY(10px);
+		z-index: -1px;
+	}
+	&::after{
+		content: '';
+		bottom:0;
+		position: absolute;
+		left: 40px;
+		right: 40px;
+		height: 10px;
+		background: rgba(231, 231, 242, 1);
+		border-radius: 0 0 12px 12px;
+		transform: translateY(20px);
+		z-index: -1;
+	}
 }
 html{
 	scroll-behavior: smooth;
