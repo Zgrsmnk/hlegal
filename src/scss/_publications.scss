@@ -1,7 +1,48 @@
 .publications{
-    padding: 30px 30px 0 30px;
+    padding: 30px;
     background: $color-bg;
+    @media screen and (min-width: 768px) {
+        padding: 60px;
+    }
 
+    &__card{
+        background: $a-active;
+    }
+    &__container{
+        // display: flex;
+        // flex-direction: column;
+        // gap:30px;
+        display: grid;
+        gap:30px;
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+
+            .publications__card:last-child{
+                grid-column: 1 /-1;
+            }
+
+            // grid-template-columns: repeat(2, 1fr);
+            // grid-template-rows: 514px 388px;
+
+            // .publications__card:nth-child(1) {
+            //     grid-column: 1/2;
+            // }
+            // .publications__card:nth-child(2) {
+            //     grid-column: 2/3;
+            // }
+            // .publications__card:nth-child(3) {
+            //     grid-column: 1/3;
+            // }
+        }
+        @media screen and (min-width: 1024px) {
+            grid-template-columns: repeat(3, 1fr);
+
+            .publications__card:last-child {
+                grid-column: auto;
+            }
+        }
+    }
     &__text{
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
@@ -10,6 +51,27 @@
         
         &--title{
             margin: 0;
+            font-size: $fs-m;
+            line-height: 1;
+            color: $a-regular;
+            padding-bottom: 15px;
+        }
+        &--number{
+            margin: 0;
+            font-size: $fs-xs;
+            line-height: 1;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $color-text;
+            letter-spacing: 1px;
+            padding-bottom: 15px;
+            border-bottom: 4px solid $color-separator;
+        }
+        &--text{
+            margin: 0;
+            padding-top: 15px;
+            font-size: $fs-s;
+            line-height: 1.5;
         }
     }
     &__picture{
