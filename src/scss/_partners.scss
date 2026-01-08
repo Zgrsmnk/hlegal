@@ -1,0 +1,36 @@
+.partners{
+    max-height: 720px;
+    overflow-y: auto;
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr) ;
+    }
+    @media screen and (min-width: 1024px) {
+        display: grid;
+        grid-template-columns:repeat(4, 1fr);
+    }
+    &__item{
+        height: 120px;
+    }
+    &__link{
+        display: block;
+        height: 100%;
+        @include flex-center-second;
+        padding: 13px 0 12px 0;
+    }
+    &__logo{
+        max-height: 100%;
+    }
+}
+.partners__title{
+    font-size: $fs-s;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $main-color;
+    @include flex-center-second;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}

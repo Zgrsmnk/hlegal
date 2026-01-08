@@ -1,5 +1,14 @@
-import '../scss/style.scss'
+//css
+import 'swiper/css';
+import 'swiper/css/pagination';
+import '../scss/style.scss';
 
+
+//js
+
+
+
+//nav open/close
 (function () {
   const isOpen = document.querySelector(".menu__burger");
   const isClose = document.querySelector(".menu__cross");
@@ -29,6 +38,7 @@ import '../scss/style.scss'
   });
 })();
 
+//tabs js
 (function () {
   // Отримуємо всі елементи вкладок
   const tabs = document.querySelectorAll(".tabs__link");
@@ -52,3 +62,15 @@ import '../scss/style.scss'
     });
   });
 })();
+
+//swiper gallery
+import Swiper from 'swiper';
+import {Pagination } from 'swiper/modules';
+const swiper = new Swiper('.swiper', {
+  // configure Swiper to use modules
+  modules: [Pagination],
+   pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+});

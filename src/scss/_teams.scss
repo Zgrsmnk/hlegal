@@ -1,0 +1,83 @@
+.teams{
+    margin-top: 50px;
+
+    &__swiper{
+        padding-bottom: 50px;
+    }
+    &__slide{
+        background: $color-bg;
+        @media screen and (min-width: 1024px) {
+            display: flex;
+        }
+    }
+    &__photo{
+        height: 500px;
+        @media screen and (min-width: 1024px) {
+            width: 400px;
+            flex-shrink: 0;
+            height: auto;
+            position: relative;
+            min-height: 298px;
+        }
+    }
+    &__photo--img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @media screen and (min-width: 1024px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__text{
+        padding: 30px;
+        
+        &--title{
+            margin: 0;
+            word-wrap: break-word;
+            line-height: 1.2;
+            background: $gradient-red-text;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-bottom: 30px;
+        }
+
+        &--name{
+            margin: 0;
+            font-size: $fs-m;
+            font-weight: 700;
+            color: $color-text;
+            line-height: 1.2;
+        }
+
+        &--job{
+            margin: 0;
+            font-size: $fs-s;
+            font-weight: 400;
+            color: $color-text;
+        }
+
+        &--item{
+            font-size: $fs-s;
+            line-height: 1;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        &--item {
+            display: flex;
+            align-items: center;
+
+            .icon-cheveron-right{
+                font-size: 18px;
+            }
+        }
+        &--text{
+            display: flex;
+            flex-direction: column;
+            gap:6px;
+        }
+    }
+}
