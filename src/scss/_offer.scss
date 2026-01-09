@@ -1,0 +1,82 @@
+.header__logo--second{
+    width: 169px;
+    height: 57px;
+
+    @media screen and (min-width: 768px) {
+        width: 302px;
+        height: 60px;
+    }
+}
+.header__logo--item{
+    height: 100%;
+    width: 100%;
+}
+
+.publications__second{
+    margin-top: 50px;
+}
+.offer{
+    padding: 132px 30px 60px 30px;
+    @include flex-center-second;
+    flex-direction: column;
+    text-align: center;
+    @include flex-center-second;
+
+    @media screen and (min-width: 768px) {
+        padding: 280px 60px 60px 60px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding: 176px 60px 60px 60px;
+    }
+
+    &__paragraph{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        margin: 0;
+        padding-bottom: 28px;
+        &--item{
+            font-size: $fs-l;
+            line-height: 1.6;
+            // @include flex-center-second;
+            text-align: center;
+            margin: 0;
+
+            @media screen and (min-width: 1440px) {
+                width: 1080px;
+            }
+        }
+    }
+
+
+    &__picture{
+        width: 92px;
+        height: 92px;
+        background: $a-active;
+        border-radius: 24px;
+        @include flex-center-second;
+    }
+
+    &__title{
+        background: $gradient-red-text;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+        padding: 28px 0;
+    }
+
+    &__button{
+        padding: 18px 30px;
+        color: $a-active;
+        background: $active-regular-color;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+        font-size: $fs-m;
+        line-height: 1;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+}
