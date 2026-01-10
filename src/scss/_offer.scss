@@ -12,6 +12,7 @@
     width: 100%;
 }
 
+
 .publications__second{
     margin-top: 50px;
 }
@@ -39,7 +40,6 @@
         &--item{
             font-size: $fs-l;
             line-height: 1.6;
-            // @include flex-center-second;
             text-align: center;
             margin: 0;
 
